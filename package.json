@@ -1,0 +1,35 @@
+{
+  "name": "humeai-emotion-service",
+  "version": "1.0.0",
+  "description": "Node.js service for Hume AI emotional analysis with webhook forwarding",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "local": "node stream-hume.js",
+    "test": "node test-worker.js",
+    "deploy:cloudflare": "wrangler deploy cloudflare-worker.js",
+    "dev:cloudflare": "wrangler dev cloudflare-worker.js"
+  },
+  "keywords": [
+    "hume",
+    "humeai",
+    "websocket",
+    "emotion",
+    "sentiment",
+    "analysis",
+    "render",
+    "webhook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "ws": "^8.16.0"
+  }
+}
+
