@@ -8,7 +8,7 @@ app.use(cors());
 
 // Configuration
 const PORT = process.env.PORT || 3000;
-const HUME_API_KEY = process.env.HUME_API_KEY || 'yI04LhYYTNoSiBnZlmn6adtQkExXfyvxmWbKJvh9KGDK4iYa';
+const HUME_API_KEY = process.env.HUME_API_KEY;
 const WS_URL = 'wss://api.hume.ai/v0/stream/models';
 
 // Health check endpoint
